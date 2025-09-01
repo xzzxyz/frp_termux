@@ -1,0 +1,17 @@
+serverAddr = "101.6.219.29"
+serverPort = 7000
+
+[[proxies]]
+name = "xzzxyz_openlist"
+type = "https"
+customDomains = ["xzzxyz.top"]
+
+[proxies.plugin]
+type = "https2http"
+localAddr = "127.0.0.1:5244"
+
+# HTTPS 证书相关的配置
+crtPath = "./frp/xzzxyz.top_cert_chain.pem"
+keyPath = "./frp/xzzxyz.top_key.key"
+hostHeaderRewrite = "127.0.0.1"
+requestHeaders.set.x-from-where = "frp"
