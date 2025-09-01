@@ -1,5 +1,8 @@
-serverAddr = "101.6.219.29"
+# serverAddr = "101.6.219.29"
+serverAddr = "frp.freefrp.net"
 serverPort = 7000
+auth.method = "token"
+auth.token = "freefrp.net"
 
 [[proxies]]
 name = "xzzxyz_openlist"
